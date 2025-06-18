@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'MojFont';
+  src: url('fonts/MojFont.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'MojFont', Arial, sans-serif;
+  background: url('images/pozadina.JPG') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(200, 200, 200, 0)
+}
+
+body > * {
+  background-color: rgba(180, 180, 180, 0.6);
+  padding: 6px;
+  margin: 0;
+}
+
+.naslov {
+  font-family: 'MojFont', sans-serif;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0,2;
+}
+
+.header-images {
+  position: relative;
+  height: 80px; 
+}
+
+.slika {
+  position: absolute;
+  top: 0;
+  width: 100px; /
+  height: auto;
+}
+
+.slika.desno {
+  right: 0;
+}
+
+.slika:not(.desno) {
+  left: 0;
+}
+
+.podnaslov {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0.2em;
+}
+
+.navigacija {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.navigacija li {
+  margin: 0 15px;
+}
+
+.navigacija a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background 0.3s;
+}
+
+.navigacija a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+main {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

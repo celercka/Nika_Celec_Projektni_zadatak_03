@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vježbe | Nika Čelec</title>
+   <title>Test Fonta</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-image: url('4.png');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #000000;
+      line-height: 1.6;
+	  min-height: 100vh;
+    }
+    
+    header {
+      background: rgba(110, 72, 170, 0.3);
+      color: #000000;
+      text-align: center;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(5px);
+    }
+    
+    .naslov {
+      font-size: 6rem;
+      margin-bottom: 0rem;
+	  text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+    }
+    
+    .podnaslov {
+      font-size: 4rem;
+      font-weight: normal;
+      opacity: 0.9;
+    }
+    
+    nav {
+      background-color: rgba(255,255,255,0.7);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	  position: sticky;
+      top: 0;
+      z-index: 100
+    }
+    
+    .navigacija {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem 0;
+    }
+    
+    .navigacija li {
+      margin: 0 1.5rem;
+    }
+    
+    .navigacija a {
+      text-decoration: none;
+      color: #111e36;
+      font-weight: bold;
+      padding: 0.5rem 0;
+	  border-bottom: 2px solid transparent;
+      transition: color 0.3s;
+	  font-size: 1.5rem;
+    }
+    
+    .navigacija a:hover {
+      color: #9d50bb;
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    section {
+      margin-bottom: 3rem;
+    }
+    
+    h3 {
+      color: #6e48aa;
+      margin: 2rem 0 1rem;
+      font-size: 1.5rem;
+    }
+    
+    h4 {
+      margin: 1.5rem 0 1rem;
+      color: #555;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    video {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    
+    a {
+      color: #6e48aa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .pdf-link {
+      display: inline-block;
+      background-color: #6e48aa;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+    }
+    
+    .pdf-link:hover {
+      background-color: #9d50bb;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .navigacija {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navigacija li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="naslov">NIKA ČELEC</h1>
+    <h2 class="podnaslov">Kolegij Digitalni multimedij 1</h2>
+  </header>
+
+  <nav>
+    <ul class="navigacija">
+      <li><a href="index.html">POČETNA</a></li>
+      <li><a href="o_meni.html">O MENI</a></li>
+      <li><a href="vjezbe.html">VJEŽBE</a></li>
+      <li><a href="video.html">VIDEO</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h3>1. Fontographer / FontForge</h3>
+      <h4>1. VJEŽBA</h4>
+      <p>ZAD: Izrada svog osobnog fonta</p>
+      <a href="PDF/V1.pdf" target="_blank" class="pdf-link">OSOBNI FONT u PDF FORMATU</a>
+      
+      <h4>2. VJEŽBA - Bezierova krivulja, precizno crtanje</h4>
+      <p>Crtanje Bezierovih krivulja u koordinatnom sustavu (Bezierova krivulja je parametarska krivulja definirana sa 4 točke i predstavlja temelj današnje vektorske grafike). Iz prethodne vježbe sam koristila svoj font te ga preuredila u Inkscapeu.</p>
+      <a href="PDF/V2.pdf" target="_blank" class="pdf-link">OSOBNI FONT U PDF FORMATU</a>
+      
+      <h3>Adobe Illustrator / Inkscape</h3>
+      <h4>3. VJEŽBA - boja, transformacije</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <img src="6.png" alt="Vježba 3 - primjer 1" style="max-width: 400px;">
+        <img src="5.png" alt="Vježba 3 - primjer 2" style="max-width: 400px;">
+      </div>
+      
+      <h4>4. VJEŽBA - gradijenti, transparencija</h4>
+      <p>U vježbi se obrađuje tema izrade složenih objekata koji se sastoje od više staza metodama spajanja (Unite/Compound path) ili oduzimanja oblika (Difference/Subtract). Apliciranje različitih vrsta gradijenata (linearni, radijalni, mesh...) od dvije ili više boja. Transparencija i poredak slojeva u izradi složene grafike.</p>
+      <a href="PDF/8.pdf" target="_blank" class="pdf-link">Link na PDF format</a>
+      <p>ZAD: Uz grafiku iz uputa kreirati i vlastiti složeni objekt u kojem ćete koristiti tehnike spajanja i izrezivanja objekata i primijeniti različite vrste gradijenata i transparencije.</p>
+      <img src="7.png" alt="Vježba 4 - rezultat" style="max-width: 400px;">
+      
+      <h3>PROJEKTNI ZADATAK 1</h3>
+      <a href="PDF/1.PDF" target="_blank" class="pdf-link">Upute za projektni zadatak</a>
+      <img src="4.png" alt="Projektni zadatak 1" style="max-width: 900px;">
+      
+      <h4>5. VJEŽBA- retuširanje</h4>
+      <p>ZAD: Retuširati sliku.</p>
+      <img src="VJ5.jpg" alt="Vježba 5 - retuširanje" style="max-width: 400px;">
+      <h4>6. VJEŽBA - koloriranje</h4>
+      <p>U vježbi prolazimo kroz tehnike neinvazivnog koloriranja slike koje se može primijeniti na crno-bijele slike ili slike u boji kojima želimo promijeniti nijansu određenih područja. Selekcijom željenih dijelova slike stvaramo maske kojima skrivamo ili otkrivamo efekte kolorizacije. Boja se aplicira na zaseban sloj (layer) kako ne bismo uništili originalne tonove i kako bismo mogli lakše napraviti promjene u kasnijim fazama obrade slike. Selekcije se izvode i popravljaju ručno (ne automatskim alatima) kako bi što preciznije izdvojili željenu boju iz pozadine jer o tome najviše ovisi kvaliteta slike.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <img src="vj6.jpg" alt="Vježba 6 - primjer 1" style="max-width: 550px;">
+      </div>
+      
+      <h4>7. VJEŽBA - fotomontaža</h4>
+      <p>Glavni cilj fotomontaže je kombiniranje više fotografija izrezivanjem dijelova različitih slika i spajanjem u jednu cjelinu. Pritom je najvažnije kvalitetno selektirati dijelove koje želimo izrezati kako bi se što bolje uklopili u finalnu sliku. U ovoj vježbi prolazimo kroz različite tehnike selektiranja jednostavnih i složenih oblika. Jednostavne tehnike selekcije uključuju alate kojima selektiramo poligone i oštre rubove objekata, a složenije tehnike selekcije podrazumijevaju selekciju putem kanala slike ili crtanje maski brush i eraser alatima u modu quick mask. Vježba se bavi i izradom i uklapanjem sjena objekata koje smo uvezli izrezivanjem i korekcijom boja kako bi se pojačao dojam realističnosti.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+        <img src="VJ7.jpg" alt="Vježba 7 - primjer 1" style="max-width: 550px;">
+        <img src="V7.jpg" alt="Vježba 7 - primjer 2" style="max-width: 550px;">
+      </div>
+      
+      <h3>PROJEKTNI ZADATAK 2</h3>
+      <img src="pozadina.png" alt="Projektni zadatak 2" style="max-width: 900px;">
+      
+      <h3 style="color: gray;">VJEŽBE - VIDEO/WEB</h3>
+      <p style="color: gray;">Teme i potreban software / alternativni software:</p>
+      
+      <h4>8. VJEŽBA - CINEMAGRAF</h4>
+      <p>RAZLIKA IZMEĐU GIF-a I CINEMAGRAFA</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 1rem 0;">
+        <div>
+          <p>GIF</p>
+          <img src="VJ8.gif" alt="GIF primjer" style="max-width: 550px;">
+        </div>
+        <div>
+          <p>CINEMAGRAF</p>
+          <img src="V8.gif" alt="Cinemagraf primjer" style="max-width: 550px;">
+        </div>
+      </div>
+      
+      <h4>9. VJEŽBA - VIDEO OBRADA</h4>
+      <video controls style="max-width: 900px;">
+        <source src="V9.mp4" type="video/mp4">
+      </video>
+      
+      <h4>10. i 11. VJEŽBA - WEB STRANICA U HTML-U I POSTAVLJANJE NA GITHUB</h4>
+	  <p>Prvi pokušaj</p>
+      <a href="https://celercka.github.io/Nika_Celec/" target="_blank" class="pdf-link">Pogledajte moju web stranicu</a>
+    </section>
+  </main>
+</body>
+</html>
